@@ -9,6 +9,10 @@ body section{
 header{
   height: 120px;
 }
+header p{
+  font-family: sans-serif;
+  font-weight: bold;
+}
 header .search{
   float: right;
 }
@@ -81,10 +85,10 @@ section p{
 
 .sec_1{
   /*border: 1px solid red;*/
-  background-color: #cc6600;
+  background-color: #fff5ee;
 }
 .sec_2{
-  background-color: #6666ff;
+  background-color: #e3e3e3;
   /*border: 1px solid blue;*/
 }
 .sec_2_all{
@@ -98,7 +102,7 @@ section p{
 }
 .sec_3{
   /*border: 1px solid red;*/
-  background-color: #ccff66;
+  background-color: #cfcfcf;
 }
 .sec_3_all{
   width: 100%;
@@ -116,7 +120,7 @@ section p{
 }
 .sec_4{
   /*border: 1px solid blue;*/
-  background-color: #ff8566;
+  background-color: #c1c1c1;
 }
 .sec_4_all{
   width: 100%;
@@ -134,7 +138,7 @@ section p{
 }
 .sec_5{
   /*border: 1px solid red;*/
-  background-color: #ccccff;
+  background-color: #8f8f8f;
 }
 .sec_5_all{
   width: 100%;
@@ -152,7 +156,7 @@ section p{
 }
 .sec_6{
   /*border: 1px solid blue;*/
-  background-color: #00cc00;
+  background-color: #636363;
 }
 .sec_6_all{
   width: 100%;
@@ -197,7 +201,7 @@ section p{
 
 footer{
   height: 500px;
-  border: 1px solid purple;
+  /*border: 1px solid purple;*/
 }
 
 footer .footer_all{
