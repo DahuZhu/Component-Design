@@ -87,6 +87,15 @@ section p{
   background-color: #6666ff;
   /*border: 1px solid blue;*/
 }
+.sec_2_all{
+  width: 80%;
+  height: 60%;
+  position: relative;
+  top: 100px;
+  left: 10%;
+  padding: 1rem;
+  border: 1px solid black;
+}
 .sec_3{
   /*border: 1px solid red;*/
   background-color: #ccff66;
