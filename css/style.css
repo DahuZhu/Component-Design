@@ -53,19 +53,43 @@ section{
   height: 500px;
   z-index: 20;
 }
+section h2{
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+}
 section p{
   /*border: 1px solid black;*/
+  margin: 0;
+  padding: 0.2rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.2rem;
   z-index: 5;
 }
+
+.sec_desc{
+  width: 35%;
+  height: 400px;
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  margin: 0;
+  border: 1px solid gray;
+}
+
 .sec_1{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
+  background-color: #cc6600;
 }
 .sec_2{
-
-  border: 1px solid blue;
+  background-color: #6666ff;
+  /*border: 1px solid blue;*/
 }
 .sec_3{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
+  background-color: #ccff66;
 }
 .sec_3_all{
   width: 100%;
@@ -82,7 +106,8 @@ section p{
   border: 1px solid green;
 }
 .sec_4{
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
+  background-color: #ff8566;
 }
 .sec_4_all{
   width: 100%;
@@ -99,7 +124,8 @@ section p{
   border: 1px solid green;
 }
 .sec_5{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
+  background-color: #ccccff;
 }
 .sec_5_all{
   width: 100%;
@@ -116,7 +142,8 @@ section p{
   border: 1px solid green;
 }
 .sec_6{
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
+  background-color: #00cc00;
 }
 .sec_6_all{
   width: 100%;
@@ -135,7 +162,7 @@ section p{
 
 
 
-/*setting the position of card1 in each section*/
+/*setting the position of card1,card2,card3 in each section*/
 .card1{
   position: absolute;
   top: 150px;
