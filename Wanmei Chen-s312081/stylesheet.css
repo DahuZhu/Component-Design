@@ -1,0 +1,20 @@
+.langicon{
+  font-size: 10px;
+  width:150px;
+  height:40px;
+  border: 1px solid black;
+}
+
+.tipchoice{
+  width:150px;
+  height:250px;
+  border:1px solid black;
+  background-color:grey;
+}
+
+.aud{
+  font-size: 20px;
+  width:500px;
+  height:200px;
+  border: 1px solid black;
+}

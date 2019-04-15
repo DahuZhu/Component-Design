@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title> Card </title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+	<meta charset="UTF-8">
+    <SCRIPT LANGUAGE="JavaScript">
+        var VoiceObj = new ActiveXObject("Sapi.SpVoice");
+    </SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript">
+        function InitializeControls() {
+            var VoicesToken = VoiceObj.GetVoices();
+            var AudioOutputsToken = VoiceObj.GetAudioOutputs();
+        }
+        InitializeControls();
+        function VoiceObj::EndStream()
+        {
+            idbSpeakText.value = "Read";
+        }
+        function VoiceObj::StartStream()
+        {
+            idbSpeakText.value = "Stop";
+        }
+        function SpeakText() {
+            if(idbSpeakText.value == "Read") {
+                try {
+                    VoiceObj.Speak(document.getElementById('text').innerText, 1);
+                } catch(exception) {
+                    alert("Error");
+                }
+            } else if(idbSpeakText.value == "Stop") {
+                VoiceObj.Speak("", 2);
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <h2 id="lcf">Language Change Fuction Card </h2>
+    <br />
+    <table class="langicon">
+      <tr>
+        <th> Language Change Fuction Card </th>
+      </tr>
+    </table>
+    <table class="tipchoice">
+      <tr>
+        <th>
+          <a href="C:\Users\perfe\Desktop\Card\Card.html">English
+        </th>
+      </tr>
+      <tr>
+        <th>
+          <a href="C:\Users\perfe\Desktop\Card\CardCH.html"> Chinese
+        </th>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <h2 id="afc">Audio Function Card </h2>
+    <br />
+    <br />
+	<table class="aud">
+	<tr>
+	  <td>
+	    <input type="button" id="idbSpeakText" onclick="SpeakText();" value="Read">
+	  </td>
+	  <td>
+        <P id="text">This is a text! This is a text! SKRSKR!</P>
+      </td>
+	 </tr>
+	</table>
+	<a href="https://www.microsoft.com/en-us/download/confirmation.aspx?id=10121"> Download TTS to enable read text and IE can audio
+  </body>
+</html>
